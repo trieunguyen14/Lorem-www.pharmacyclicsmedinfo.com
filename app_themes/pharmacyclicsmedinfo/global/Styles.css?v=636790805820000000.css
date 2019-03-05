@@ -1,0 +1,898 @@
+﻿/* This will become the clean single CSS file for the site */
+
+/* blue.css */
+.SubmitButton,
+.more,
+a.btn,
+btn,
+#reply-title small a,
+.comment-reply-link,
+.grid figcaption a,
+input[type="submit"],
+input[type="reset"],
+input[type="btn"],
+#welcome h1:after,
+.widget > h5:after,
+.inside #tab-tags a,
+.pagination .current,
+.symple-pricing-table .featured .symple-pricing-header,
+.symple-pricing .symple-button.green,
+table.shop_table .cart-subtotal th,
+table.shop_table .shipping th,
+table.shop_table .total th,
+li.active a,
+#header-wrap,
+.prev,
+.next,
+.nav-prev a,
+.nav-next a,
+.view-grid a,
+.view-more,
+.view-all a,
+.portfolio-wrap .close,
+single-portfolio nav .next-port a,
+.aq-block-aq_features_block:hover .feature-icon,
+.single-portfolio nav .prev-port a, .single-portfolio .port-grid a, .single-portfolio nav .next-port a {
+    background: #2980b9 !important;
+}
+
+a:hover, a:focus,
+.star-rating span, .star-rating span {
+    color: #2980b9 !important;
+}
+
+.widget ul.tabs li a,
+.aq_block_tabs li a {
+    border-color: #2980b9 !important;
+}
+
+.sub-menu > li,
+.woocommerce-result-count, .woocommerce-result-count,
+a.button, button.button, input.button, #respond input#submit, #content input.button, a.button, button.button, input.button, #respond input#submit, #content input.button,
+#respond input#submit.alt:hover, #content input.button.alt:hover,
+table.shop_table th, table.shop_table th,
+body div.pp_overlay,
+.wpml-lang,
+header#masthead .right li a,
+#primary-nav-wrap,
+.show-hide {
+    background: #216897 !important;
+}
+
+header#masthead .logo {
+    border-color: #216897 !important;
+}
+
+#mobile-nav li a,
+.sub-menu > li > a,
+.sub-menu > li:last-child > a {
+    border-color: #194f72 !important;
+}
+
+/* aqpb-view.css */
+.cf:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+
+/** Basic grid columns 
+-----------------------*/
+/** 
+For those who fancy fixed widths,
+copy this into your theme stylesheet
+
+[class*="aq_span"] {
+	float: left;
+	margin-left: 20px;
+}
+
+.aq-template-wrapper .aq_span12 {width: 940px;}
+.aq-template-wrapper .aq_span11 {width: 860px;}
+.aq-template-wrapper .aq_span10 {width: 780px;}
+.aq-template-wrapper .aq_span9 {width: 700px;}
+.aq-template-wrapper .aq_span8 {width: 620px;}
+.aq-template-wrapper .aq_span7 {width: 540px;}
+.aq-template-wrapper .aq_span6 {width: 460px;}
+.aq-template-wrapper .aq_span5 {width: 380px;}
+.aq-template-wrapper .aq_span4 {width: 300px;}
+.aq-template-wrapper .aq_span3 {width: 220px;}
+.aq-template-wrapper .aq_span2 {width: 140px;}
+.aq-template-wrapper .aq_span1 {width: 60px;}
+
+*/
+
+[class*="aq_span"] {
+    float: left;
+    margin-left: 3%;
+}
+
+.aq-template-wrapper .aq_span4 {
+    width: 31.33%;
+}
+
+.aq-template-wrapper .aq_span8 {
+    width: 65.67%;
+}
+
+.aq-template-wrapper .aq_span12 {
+    width: 100%;
+}
+
+.aq-template-wrapper .aq-first {
+    margin-left: 0;
+}
+
+/** Blocks 
+-----------------------*/
+.aq-block {
+}
+/* clear block */
+
+/* Tabs 
+========================================================================*/
+.aq_block_tabs .ui-tabs-hide {
+    position: absolute;
+    left: -9999px;
+}
+
+.aq_block_tabs {
+    background: none;
+    margin: 0.5em 0 2em 0;
+}
+
+    .aq_block_tabs ul.aq-nav {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background: none;
+        border: 0;
+        float: none;
+    }
+
+        .aq_block_tabs ul.aq-nav li {
+            float: left;
+            position: relative;
+            margin: 0 2px -1px 0!important;
+            z-index: 10;
+            list-style: none;
+        }
+
+            .aq_block_tabs ul.aq-nav li a {
+                border: 1px solid #e1e1e1;
+                border-bottom: none;
+                display: block;
+                overflow: hidden;
+                padding: 5px 10px 0 10px;
+                height: 26px;
+                background: #FBFBFB;
+                margin: 0;
+                text-decoration: none;
+                color: #373737;
+                -webkit-border-radius: 3px 3px 0 0;
+                -moz-border-radius: 3px 3px 0 0;
+                border-radius: 3px 3px 0 0;
+            }
+
+                .aq_block_tabs ul.aq-nav li a:hover {
+                    background: #fff;
+                    margin: 0;
+                }
+
+            .aq_block_tabs ul.aq-nav li.ui-tabs-active a {
+                height: 27px;
+                background: #fff;
+            }
+
+    .aq_block_tabs .aq-tab {
+        background: #fff;
+        padding: 15px 15px 5px;
+        border: 1px solid #dfdfdf;
+        display: none;
+    }
+
+        .aq_block_tabs .aq-tab.first-child {
+            position: relative;
+            left: 0;
+        }
+
+/* Toggles & Accordion
+====================================================================*/
+.aq_block_accordion_wrapper {
+    margin: 0.5em 0 20px;
+}
+
+.aq_block_toggle .tab-body,
+.aq_block_accordion .tab-body {
+    display: none;
+    background: url(../../../img/pharmacyclicsmedinfo/drop-bg.png) repeat-x 0 top;
+    overflow: hidden;
+    padding: 15px 15px 5px;
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+/*------------------------------------------------------------------------------*/
+/* Blocks
+/*==============================================================================*/
+
+/* general */
+.aq-block {
+    margin-bottom: 30px !important;
+}
+
+.slide .blox_caption {
+    margin-bottom: 20px;
+}
+/* clear block */
+
+
+/* tabs & toggles */
+.aq-block-aq_tabs_block .aq_block_tabs,
+.aq-block-aq_tabs_block .aq_block_toggle,
+.aq-block-aq_tabs_block .aq_block_accordion_wrapper,
+.aq_alert {
+    -webkit-box-shadow: 0px 1px 3px rgba(130, 130, 130, 0.1);
+    -moz-box-shadow: 0px 1px 3px rgba(130, 130, 130, 0.1);
+    box-shadow: 0px 1px 3px rgba(130, 130, 130, 0.1);
+}
+
+.aq_block_tabs ul.aq-nav li a {
+    border-radius: 0;
+    font-size: 12px;
+    border: none;
+    padding: 10px 10px 5px 10px;
+    background: none;
+}
+
+.aq_block_tabs ul.aq-nav li.ui-tabs-active a {
+    border-top: 2px solid #ccc;
+}
+
+.aq_block_tabs .aq-tab {
+    border-color: #efefef;
+}
+/* image block */
+
+
+/* tabs */
+.aq_block_tabs ul.aq-nav li a {
+    height: 36px;
+}
+
+.aq_block_tabs ul.aq-nav li.ui-tabs-active a {
+    height: 38px;
+}
+/* media block */
+
+.aq-pricetable-wrapper li.aq-pricetable-title h3.title {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    font-size: 20px;
+    font-weight: 200;
+}
+
+/*
+ * Plugin: Symple Shortcodes Plugin
+ * Author: AJ Clarke : http://wpexplorer.com
+ * Copyright: Copyright (c) 2012, AJ Clarke
+ * License: GNU General Public License version 2.0
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/* Clear Floats
+================================================== */
+
+.symple-clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+/* Spacing
+================================================== */
+
+.symple-column-last:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.symple-testimonial-content:after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: -15px;
+    width: 0px;
+    height: 0px;
+    border-bottom: 15px solid rgba(255,255,255,0);
+    border-top: 15px solid rgba(255,255,255,0);
+    border-right: 15px solid #f5f5f5;
+    font-size: 0px;
+    line-height: 0px;
+}
+
+.symple-tabs ul.tabs:before, ul.tabs:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.symple-tabs ul.tabs:after {
+    clear: both;
+}
+
+.symple-tabs:before, ul.symple-tabs:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.symple-tabs:after {
+    clear: both;
+}
+
+/* Skillbars - 1.3
+================================================== */
+.symple-skillbar {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+    transition: 0.4s linear;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+}
+
+.symple-skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: #6adcfa;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.symple-callout-button .button {
+    height: 40px;
+    line-height: 40px;
+}
+/* Provide some responsive support for the Symple Shortcodes
+================================================== */
+@media only screen and (max-width: 520px) {
+}
+
+/* style.css */
+
+/* Start NinjaForm CSS */
+
+.ninjaLeft {
+    width: 370px;
+}
+
+.ninjaRight {
+    width: 370px;
+    margin-left: 30px;
+}
+
+.ninja-forms-form-wrap *,
+.ninja-forms-form-wrap *:after,
+.ninja-forms-form-wrap *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+[class*='ninja-col-'] {
+    float: left;
+    padding: 0 5px;
+}
+
+/*[class*='ninja-col-']:last-of-type {
+    padding-right: 0;
+}*/
+
+.ninja-col-1-2 { width: 50%; }
+.ninja-col-2-2 { width: 100%; }
+
+.ninja-col-1-3 { width: 33.33%; }
+.ninja-col-2-3 { width: 66.66%; }
+.ninja-col-3-3 { width: 100%; }
+
+.ninja-col-1-4 { width: 25%; }
+.ninja-col-2-4 { width: 50%; }
+.ninja-col-3-4 { width: 75%; }
+.ninja-col-4-4 { width: 100%; }
+
+.ninja-row { width: auto; margin: 0 auto; padding: 0; }
+
+.ninja-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*.ninja-row  > [class*='ninja-col-']:last-of-type {
+    padding-right: 5px;
+}*/
+
+/* =Responsive Structure
+----------------------------------------------- */
+
+@media  only screen and (max-width: 600px) {
+    .ninja-row [class*='ninja-col-'] {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+a.tooltip {outline:none; text-decoration: none; }
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {text-decoration:none;}
+a.tooltip span {
+    z-index:10;display:none; padding:14px 20px;
+    margin-top:-10px; margin-left:28px;
+    width:240px; line-height:16px;
+    z-index: 1;
+    position: relative;
+}
+a.tooltip span:before {
+    border-top: 10px solid transparent;
+    border-right: 15px solid #ccc;
+    border-bottom: 10px solid transparent;
+    content: "";
+    position: absolute;
+    left: -15px;
+
+}
+a.tooltip:hover span{
+    display:inline; position:absolute; color:#333;
+    border:1px solid #ccc; background:#f1f1f1;}
+
+/*CSS3 extras*/
+a.tooltip span
+{
+    border-radius:4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+
+    -moz-box-shadow: 5px 5px 8px #CCC;
+    -webkit-box-shadow: 5px 5px 8px #CCC;
+    box-shadow: 5px 5px 8px #CCC;
+}
+#ui-datepicker-div {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+#ui-datepicker-div a {
+    text-decoration: none;
+    cursor: pointer;
+}
+#ui-datepicker-div .ui-datepicker-header,
+#ui-datepicker-div .ui-datepicker-calendar th,
+#ui-datepicker-div .ui-datepicker-calendar td {
+    padding: 5px;
+    text-align: center;
+}
+
+#ui-datepicker-div .ui-icon {
+    text-indent: 0px;
+}
+.ui-datepicker-prev {
+    float: left;
+}
+.ui-datepicker-next {
+    float: right;
+}
+.ninja-forms-no-display {
+    display: none;
+}
+.ninja-forms-form .wp-switch-editor {
+    height: auto;
+}
+.ninja-forms-form .mceIframeContainer {
+    background: #fff;
+}
+.ninja-forms-req-symbol {
+    color: #ff0000;
+}
+.ninja-forms-form .label-above label,
+.ninja-forms-form .label-below label {
+    display: block;
+}
+
+.field-wrap,
+#ninja_forms_required_items {
+    margin-bottom: 10px;
+}
+
+#pass-strength-result {
+    background-color: #eee;
+    border-color: #ddd !important;
+    border-style: solid;
+    border-width: 1px;
+    float: left;
+    margin: 13px 5px 5px 1px;
+    padding: 3px 5px;
+    text-align: center;
+    width: 200px;
+}
+
+#pass-strength-result.bad {
+    background-color: #ffb78c;
+    border-color: #ff853c !important;
+}
+
+#pass-strength-result.good {
+    background-color: #ffec8b;
+    border-color: #fc0 !important;
+}
+
+#pass-strength-result.short {
+    background-color: #ffa0a0;
+    border-color: #f04040 !important;
+}
+
+#pass-strength-result.strong {
+    background-color: #c3ff88;
+    border-color: #8dff1c !important;
+}
+
+
+.ninja-forms-form-wrap .ninja-forms-form .field-wrap:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.ninja-forms-form-wrap .ninja-forms-form .field-wrap.label-left .ninja-forms-field,
+.ninja-forms-form-wrap .ninja-forms-form .field-wrap.label-left .ninja-forms-star-rating-control {
+    margin-left: 8px;
+}
+.ninja-forms-form-wrap .ninja-forms-form .field-wrap.label-right .ninja-forms-field,
+.ninja-forms-form-wrap .ninja-forms-form .field-wrap.label-right .ninja-forms-star-rating-control {
+    margin-right: 8px;
+}
+
+.ninja-forms-form-wrap .ninja-forms-form .label-above label {
+    margin-bottom: 5px;
+}
+
+.ninja-forms-form-wrap .ninja-forms-form .MultiFile-wrap {
+    display: inline-block;
+}
+
+/* ---------------------------------
+TEXT FIELDS & TEXTAREAS
+----------------------------------*/
+
+.ninja-forms-form-wrap .ninja-forms-form .text-wrap.label-left input,
+.ninja-forms-form-wrap .ninja-forms-form .profile_pass-wrap.label-left input,
+.ninja-forms-form-wrap .ninja-forms-form .textarea-wrap.label-left textarea {
+    margin-left: 10px;
+}
+.ninja-forms-form-wrap .ninja-forms-form .text-wrap.label-right input,
+.ninja-forms-form-wrap .ninja-forms-form .profile_pass-wrap.label-right input,
+.ninja-forms-form-wrap .ninja-forms-form .textarea-wrap.label-right textarea {
+    margin-right: 10px;
+}
+
+.ninja-forms-form-wrap .ninja-forms-form .text-wrap.label-above label,
+.ninja-forms-form-wrap .ninja-forms-form .textarea-wrap.label-above label {
+    display: block;
+    width: 100%;
+}
+
+.ninja-forms-form-wrap .ninja-forms-form .text-wrap.label-above input,
+.ninja-forms-form-wrap .ninja-forms-form .text-wrap.label-below input,
+.ninja-forms-form-wrap .ninja-forms-form .textarea-wrap.label-above textarea,
+.ninja-forms-form-wrap .ninja-forms-form .textarea-wrap.label-below textarea {
+    width: 100%;
+}
+
+.ninja-forms-form-wrap .ninja-forms-form .text-wrap.label-inside input,
+.ninja-forms-form-wrap .ninja-forms-form .textarea-wrap.label-inside textarea {
+    width: 100%;
+}
+.ninja-forms-form-wrap .ninja-forms-form .text-wrap.label-inside input.ninja-forms-req,
+.ninja-forms-form-wrap .ninja-forms-form .textarea-wrap.label-inside textarea.ninja-forms-req {
+    width: 95% !important;
+}
+
+.ninja-forms-form-wrap .ninja-forms-form .textarea-wrap textarea {
+    height: 100px;
+}
+
+.ninja-forms-form-wrap .ninja-forms-form .profile_pass-wrap input {
+    margin-bottom: 10px;
+}
+
+/* ---------------------------------
+RADIO & CHECKBOX LISTS
+----------------------------------*/
+
+.ninja-forms-form-wrap .ninja-forms-form .list-radio-wrap span ul li input,
+.ninja-forms-form-wrap .ninja-forms-form .list-checkbox-wrap span ul li input {
+    margin-right: 5px;
+}
+
+.ninja-forms-form-wrap .ninja-forms-form .list-radio-wrap ul,
+.ninja-forms-form-wrap .ninja-forms-form .list-checkbox-wrap ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.ninja-forms-form-wrap .ninja-forms-form .list-radio-wrap ul li,
+.ninja-forms-form-wrap .ninja-forms-form .list-checkbox-wrap ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.ninja-forms-form-wrap .ninja-forms-form .list-radio-wrap.label-left label,
+.ninja-forms-form-wrap .ninja-forms-form .list-radio-wrap.label-left ul,
+.ninja-forms-form-wrap .ninja-forms-form .list-radio-wrap.label-left ul li,
+.ninja-forms-form-wrap .ninja-forms-form .list-radio-wrap.label-right label,
+.ninja-forms-form-wrap .ninja-forms-form .list-radio-wrap.label-right ul,
+.ninja-forms-form-wrap .ninja-forms-form .list-radio-wrap.label-right ul li,
+.ninja-forms-form-wrap .ninja-forms-form .list-checkbox-wrap.label-left label,
+.ninja-forms-form-wrap .ninja-forms-form .list-checkbox-wrap.label-left ul,
+.ninja-forms-form-wrap .ninja-forms-form .list-checkbox-wrap.label-left ul li,
+.ninja-forms-form-wrap .ninja-forms-form .list-checkbox-wrap.label-right label,
+.ninja-forms-form-wrap .ninja-forms-form .list-checkbox-wrap.label-right ul,
+.ninja-forms-form-wrap .ninja-forms-form .list-checkbox-wrap.label-right ul li {
+    float: left;
+}
+.ninja-forms-form-wrap .ninja-forms-form .list-radio-wrap.label-left ul li,
+.ninja-forms-form-wrap .ninja-forms-form .list-radio-wrap.label-right ul li,
+.ninja-forms-form-wrap .ninja-forms-form .list-checkbox-wrap.label-left ul li,
+.ninja-forms-form-wrap .ninja-forms-form .list-checkbox-wrap.label-right ul li {
+    padding: 0 8px;
+}
+
+.ninja-forms-form-wrap .ninja-forms-form .list-radio-wrap.label-above ul li,
+.ninja-forms-form-wrap .ninja-forms-form .list-radio-wrap.label-below ul li,
+.ninja-forms-form-wrap .ninja-forms-form .list-checkbox-wrap.label-above ul li,
+.ninja-forms-form-wrap .ninja-forms-form .list-checkbox-wrap.label-below ul li {
+    padding: 0 0 0 10px;
+}
+
+/* ---------------------------------
+MULTI FIELD
+----------------------------------*/
+
+.ninja-forms-form-wrap .ninja-forms-form .list-multi-wrap.label-left label {
+    float:left;
+}
+.ninja-forms-form-wrap .ninja-forms-form .list-multi-wrap.label-right select {
+    float:left;
+}
+
+/* ---------------------------------
+CREDIT CARD BLOCK
+----------------------------------*/
+
+.ninja-forms-form-wrap .ninja-forms-form .credit_card-wrap div label,
+.ninja-forms-form-wrap .ninja-forms-form .credit_card-wrap div input {
+    display: block;
+    width: 100%;
+}
+.ninja-forms-form-wrap .ninja-forms-form .credit_card-wrap div {
+    margin-bottom: 10px;
+}
+.ninja-forms-form-wrap .ninja-forms-form .credit_card-wrap div span {
+    font-size: 0.8em;
+}
+/* End NinjaForm CSS */
+
+/* 
+* Shortcodes
+* 
+* @package WP Serenity
+* @subpackage CSS
+ */
+/* Gallery Photo */
+/* HR */
+hr.none {
+    border: none;
+    outline: none;
+    height: 1px;
+    background: none;
+}
+
+.testimonial-content:after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: -12px;
+    width: 0px;
+    height: 0px;
+    border-bottom: 12px solid transparent;
+    border-top: 8px solid transparent;
+    border-right: 12px solid #f9f9f9;
+    font-size: 0px;
+    line-height: 0px;
+}
+
+
+/* Buttons */
+.btn,
+.button {
+    position: relative;
+    text-transform: uppercase;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+    -moz-transition: all 0.1s ease-in-out 0s;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    white-space: nowrap;
+    nowhitespace: afterproperty;
+    line-height: 1em;
+    text-align: center;
+    outline: none;
+    overflow: visible;
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+}
+
+    .button span.button-inner {
+        display: inline-block;
+        color: #fff;
+        font-weight: bold;
+        padding: 1em 1.4em;
+        line-height: 0.8em;
+        text-decoration: none;
+        text-align: center;
+        white-space: nowrap;
+        text-shadow: 0 -1px 0 rgba(0,0,0,0.35);
+    }
+
+.ct-toggle-wrap h3.trigger {
+    margin: 0px;
+}
+
+    .ct-toggle-wrap h3.trigger a.trigger-link {
+        color: #777;
+        display: block;
+        border: 1px solid #ddd;
+        padding: 10px;
+        outline: 0 !important;
+        font-weight: 400;
+        font-size: 12px;
+        margin-bottom: 0px;
+        margin-top: 8px;
+        background: #f5f5f5;
+    }
+
+        .ct-toggle-wrap h3.trigger a.trigger-link:hover,
+        .ct-toggle-wrap h3.active a.trigger-link,
+        .ct-toggle-wrap h3.active a.trigger-link:hover {
+            border: 1px solid #ddd;
+            color: #444;
+            background: #eee;
+        }
+
+    .ct-toggle-wrap h3.trigger a span[class*='ct-icon-'] {
+        margin-right: 7px;
+    }
+
+/* Accordion */
+.ct-accordion .trigger {
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 8px;
+}
+
+.ct-accordion .trigger {
+    color: #777;
+    display: block;
+    border: 1px solid #ddd;
+    padding: 10px;
+    outline: 0 !important;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 0px;
+    margin-top: 8px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.tab-shortcode ul.tabs:before, ul.tabs:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.tab-shortcode ul.tabs:after {
+    clear: both;
+}
+
+
+.tab-shortcode:before, ul.tab-shortcode:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.tab-shortcode:after {
+    clear: both;
+}
+
+.column-last:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+}
+
+.pricing-button .button {
+    float: none;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+/*
+* Comments
+* 
+* @package WP Serenity
+* @subpackage CSS
+*/
+/** Threaded Comments
+==============================================================================*/
+
+.comments-nav .prev {
+    display: inline-block;
+    height: 29px;
+    width: 29px;
+    margin-left: 10px;
+}
+
+.comments-nav .next {
+    display: inline-block;
+    height: 29px;
+    width: 29px;
+    margin-left: 10px;
+}
+/** Comment List
+==============================================================================*/

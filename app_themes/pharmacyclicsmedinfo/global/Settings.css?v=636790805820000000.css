@@ -1,0 +1,310 @@
+﻿/*-----------------------------------------------------------------------------
+
+	-	Megafolio PRO  -
+
+Screen Stylesheet
+
+version:   	1.0
+date:      	10/10/12
+author:		themepunch
+email:     	info@themepunch.com
+website:   	http://www.themepunch.com
+-----------------------------------------------------------------------------*/
+
+
+/****************************
+	-	FANCY BOX TRICKS -
+*****************************/
+.fancybox-lock .fancybox-overlay {
+    overflow-x: auto;
+    overflow-y: hidden !important;
+}
+/************************************************
+	-	BASIC CAPTIONS AND COVERS PER mega-entry	-
+************************************************/
+
+
+
+/*** THE DIRECTIONS OF CAPTIONS **/
+.mega-square .mega-square-top {
+    top: 0px;
+    left: 0px;
+    bottom: auto;
+}
+
+.mega-square .mega-square-bottom {
+    bottom: 0px;
+    left: 0px;
+    top: auto;
+}
+
+.mega-square .mega-square-left {
+    top: 0px;
+    left: 0px;
+    max-width: 50%;
+    height: 100%;
+}
+
+.mega-square .mega-square-right {
+    top: 0px;
+    right: 0px;
+    left: auto;
+    width: 50%;
+    height: 100%;
+}
+
+.mega-portrait .mega-portrait-top {
+    top: 0px;
+    left: 0px;
+    bottom: auto;
+}
+
+.mega-portrait .mega-portrait-bottom {
+    bottom: 0px;
+    left: 0px;
+    top: auto;
+}
+
+.mega-portrait .mega-portrait-left {
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+}
+
+.mega-portrait .mega-portrait-right {
+    top: 0px;
+    right: 0px;
+    left: auto;
+    width: 50%;
+    height: 100%;
+}
+
+.mega-landscape .mega-landscape-top {
+    top: 0px;
+    left: 0px;
+    bottom: auto;
+}
+
+.mega-landscape .mega-landscape-bottom {
+    bottom: 0px;
+    left: 0px;
+    top: auto;
+}
+
+.mega-landscape .mega-landscape-left {
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+}
+
+.mega-landscape .mega-landscape-right {
+    top: 0px;
+    right: 0px;
+    left: auto;
+    width: 50%;
+    height: 100%;
+}
+
+
+
+/** SET THE CAPTION SETTIGS UNDER LOWSIZE ENTRIES  **/
+
+.mega-lowsize .mega-covercaption p {
+    display: none;
+}
+
+.mega-lowsize .mega-title {
+    font-size: 18px;
+}
+
+.mega-lowsize .mega-date {
+    font-size: 13px;
+}
+/********************************
+	-	CAPTION NORMAL LINKS
+*********************************/
+
+
+/*********************************************
+	-	SOCIAL BAR AT THE BOTTOM PER mega-entry	-
+***********************************************/
+
+.mega-square .mega-square-bottom.mega-withsocialbar,
+.mega-portrait .mega-portrait-bottom.mega-withsocialbar,
+.mega-landscape .mega-landscape-bottom.mega-withsocialbar {
+    padding-bottom: 25px;
+}
+
+.mega-socialbar {
+    position: absolute;
+    height: 16px;
+    z-index: 10;
+    bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    left: 0px;
+    right: 0px;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    /*background: url(../assets/socialbar-bg.png) repeat-x;*/
+    border-top: 0;
+    border-bottom: 0;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    padding: 2px 10px;
+    overflow: hidden;
+}
+
+
+    .mega-socialbar span {
+        text-align: left;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 11px;
+        color: #777;
+        font-weight: 400;
+        line-height: 16px;
+        text-shadow: 0px 1px 0px #fff;
+    }
+
+
+.ie8 .mega-socialbar .mega-rightfloat,
+.ie9 .mega-socialbar .mega-rightfloat {
+    margin-right: 25px;
+}
+
+
+
+
+
+/****************************************************
+
+	-	BASIC SETTINGS FOR GALLERY GRIDS	-
+
+******************************************************/
+
+
+.mega-entry .mega-entry-innerwrap {
+    border: 5px solid #fff;
+}
+
+.noborder .mega-entry .mega-entry-innerwrap {
+    border: 0px solid #fff;
+}
+
+.noborder .mega-entry .mega-entry-innerwrap {
+    border: 0px solid #fff;
+}
+
+.light-bg-entries .mega-entry .mega-entry-innerwrap {
+    background-color: #ccc !important;
+}
+
+.dark-bg-entries .mega-entry .mega-entry-innerwrap {
+    background-color: rgb(0,0,0) !important;
+    background-color: rgba(0,0,0,0.3) !important;
+}
+
+
+.mega-entry {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: absolute;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    -webkit-transform: translateZ(10);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    z-index: 2;
+}
+
+
+
+
+
+    .mega-entry .mega-entry-innerwrap {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: visible;
+        z-index: 2;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        -webkit-transform: translateZ(10);
+        -webkit-backface-visibility: hidden;
+        -webkit-perspective: 1000;
+    }
+
+.ie8 .mega-entry,
+.ie8 .mega-entry .mega-entry-innerwrap,
+.ie9 .mega-entry,
+.ie9 .mega-entry .mega-entry-innerwrap {
+    overflow: hidden;
+}
+
+
+.megafolio-container.norounded .mega-entry .mega-entry-innerwrap {
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+.megafolio-container-splash.norounded .mega-entry .mega-entry-innerwrap {
+    border-radius: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+}
+
+
+
+
+/** IE HACKS **/
+
+.ieimg {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+.mega-mega-entry-added .mega-socialbar,
+.mega-mega-entry-added .mega-covercaption {
+    visibility: hidden;
+}
+/*********************************************************
+
+     -    MEGA PORTFOLIO HOVER EFFECTS     -
+
+**********************************************************/
+/****************************
+		-	BASIC SETTINGS -
+    *****************************/
+
+
+/***********************************************************
+	-  EXAMPLES FOR COLORED BG OF ENTRIES in Example 10 -
+************************************************************/
+
+.mega-entry.mega-bg-1 .mega-entry-innerwrap {
+    background-color: #f32390 !important;
+}
+
+.mega-entry.mega-bg-2 .mega-entry-innerwrap {
+    background-color: #d69b12 !important;
+}
+
+.mega-entry.mega-bg-3 .mega-entry-innerwrap {
+    background-color: #7bce8b !important;
+}
